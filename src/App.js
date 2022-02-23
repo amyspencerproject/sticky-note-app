@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import NotesList from "./NotesList.js";
 import Header from "./Header.js";
 
-class App extends Component {
+class App extends React.Component {
   state = {
     notes: [
       {
