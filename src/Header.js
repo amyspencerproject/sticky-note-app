@@ -8,12 +8,13 @@ const Header = (props) => {
 
   return (
     <header className="app-header">
-    <Switch />
+    
       <h1 className="app-header__title">Super Sticky Notes</h1>
       <aside className="app-header__controls">
         <button onClick={props.addNote} className="add-new">
           + New Note
         </button>
+        
         <input
           className="search"
           type="text"
@@ -21,6 +22,7 @@ const Header = (props) => {
           value={props.searchText}
           onChange={callSearch}
         />
+        <Switch />
       </aside>
     </header>
   );
