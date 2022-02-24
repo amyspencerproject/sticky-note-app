@@ -12,7 +12,7 @@ class App extends React.Component {
         doesMatchSearch: true
       }
     ],
-    searchText: ""
+    searchText: "",
   };
 
   addNote = (props) => {

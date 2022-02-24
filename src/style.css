@@ -103,6 +103,12 @@ textarea {
   color: black;
   cursor: pointer;
 }
+.on {
+  background-color: white;
+}
+.off {
+  background-color: black;
+}
 
 .switch-plate {
   width: 150px;
@@ -146,4 +152,11 @@ textarea {
   height: 50px;
   box-shadow: 4px 0 3px -1px rgba(0, 0, 0, 0.85);
   left: 2px;
+}
+.on .switch-handle {
+  top: -10px;
+}
+
+.off .switch-handle {
+  bottom: -10px;
 }
