@@ -13,6 +13,7 @@ class App extends React.Component {
       }
     ],
     searchText: "",
+    on: true
   };
 
   addNote = (props) => {
@@ -88,6 +89,13 @@ class App extends React.Component {
       this.setState({ notes: savedNotes });
     }
   }
+
+  wallClass () => {
+    if (this.state.on === true){
+        wallClass="on"
+    }
+    wallClass="off";
+}
 
   render() {
     return (
